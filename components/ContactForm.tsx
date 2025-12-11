@@ -24,21 +24,22 @@ const ContactForm: React.FC = () => {
     alert("Gracias por su interés. Nos pondremos en contacto pronto.");
   };
 
-  const inputClasses = "w-full bg-transparent border-b border-burgundy/30 py-3 text-elegant-black focus:outline-none focus:border-burgundy transition-colors placeholder-gray-400 font-light";
+  // Styles using the new burgundy palette (border-burgundy-light, placeholder-burgundy-light)
+  const inputClasses = "w-full bg-transparent border-b border-burgundy-light/40 py-3 text-burgundy-dark focus:outline-none focus:border-burgundy transition-colors placeholder-burgundy-light/50 font-light";
 
   return (
-    <Section id="contacto" className="bg-[#FAF9F6]">
-      <div className="max-w-4xl mx-auto bg-white p-8 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+    <Section id="contacto" className="bg-burgundy-faint">
+      <div className="max-w-4xl mx-auto bg-soft-white p-8 md:p-16 shadow-[0_20px_50px_rgba(90,26,35,0.08)]">
         <div className="text-center mb-12">
           <span className="text-burgundy uppercase tracking-[0.2em] text-sm font-medium">Hablemos</span>
-          <h2 className="font-serif text-4xl text-elegant-black mt-4">Comience a planear su celebración</h2>
-          <p className="text-gray-500 mt-4 font-light">Déjenos sus datos y nos pondremos en contacto para diseñar una propuesta a medida.</p>
+          <h2 className="font-serif text-4xl text-burgundy-dark mt-4">Comience a planear su celebración</h2>
+          <p className="text-burgundy-light mt-4 font-light">Déjenos sus datos y nos pondremos en contacto para diseñar una propuesta a medida.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <label className="text-xs uppercase tracking-wider text-gray-500 mb-2 block">Nombre Completo</label>
+              <label className="text-xs uppercase tracking-wider text-burgundy-light mb-2 block">Nombre Completo</label>
               <input 
                 type="text" 
                 name="name" 
@@ -50,7 +51,7 @@ const ContactForm: React.FC = () => {
               />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wider text-gray-500 mb-2 block">Correo Electrónico</label>
+              <label className="text-xs uppercase tracking-wider text-burgundy-light mb-2 block">Correo Electrónico</label>
               <input 
                 type="email" 
                 name="email" 
@@ -65,7 +66,7 @@ const ContactForm: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <label className="text-xs uppercase tracking-wider text-gray-500 mb-2 block">Teléfono / WhatsApp</label>
+              <label className="text-xs uppercase tracking-wider text-burgundy-light mb-2 block">Teléfono / WhatsApp</label>
               <input 
                 type="tel" 
                 name="phone" 
@@ -76,7 +77,7 @@ const ContactForm: React.FC = () => {
               />
             </div>
             <div>
-              <label className="text-xs uppercase tracking-wider text-gray-500 mb-2 block">Fecha Tentativa</label>
+              <label className="text-xs uppercase tracking-wider text-burgundy-light mb-2 block">Fecha Tentativa</label>
               <input 
                 type="date" 
                 name="date" 
@@ -89,7 +90,7 @@ const ContactForm: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <label className="text-xs uppercase tracking-wider text-gray-500 mb-2 block">Tipo de Evento</label>
+              <label className="text-xs uppercase tracking-wider text-burgundy-light mb-2 block">Tipo de Evento</label>
               <select 
                 name="type" 
                 className={inputClasses}
@@ -103,7 +104,7 @@ const ContactForm: React.FC = () => {
               </select>
             </div>
              <div>
-              <label className="text-xs uppercase tracking-wider text-gray-500 mb-2 block">Presupuesto Estimado (USD)</label>
+              <label className="text-xs uppercase tracking-wider text-burgundy-light mb-2 block">Presupuesto Estimado (USD)</label>
               <input 
                 type="text" 
                 name="budget" 
@@ -116,7 +117,7 @@ const ContactForm: React.FC = () => {
           </div>
 
           <div>
-            <label className="text-xs uppercase tracking-wider text-gray-500 mb-2 block">Cuéntenos sobre su evento</label>
+            <label className="text-xs uppercase tracking-wider text-burgundy-light mb-2 block">Cuéntenos sobre su evento</label>
             <textarea 
               name="message" 
               rows={4} 

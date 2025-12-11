@@ -30,8 +30,8 @@ const Services: React.FC = () => {
     <Section id="servicios" className="bg-white">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="text-gold uppercase tracking-[0.2em] text-sm font-medium mb-4 block">Nuestros Servicios</span>
-        <h2 className="font-serif text-4xl md:text-5xl text-elegant-black mb-6">Curaduría de Experiencias</h2>
-        <p className="text-gray-600 font-light text-lg">
+        <h2 className="font-serif text-4xl md:text-5xl text-burgundy-dark mb-6">Curaduría de Experiencias</h2>
+        <p className="text-burgundy-light font-light text-lg">
           Ofrecemos un servicio 360° para garantizar que usted sea un invitado más en su propia celebración.
         </p>
       </div>
@@ -40,15 +40,15 @@ const Services: React.FC = () => {
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="group p-8 border border-gray-100 hover:border-burgundy/20 bg-soft-white hover:bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 cursor-default"
+            className="group p-8 border border-burgundy-light/20 hover:border-burgundy-light/40 bg-burgundy-faint hover:bg-white transition-all duration-500 hover:shadow-2xl hover:shadow-burgundy-dark/5 hover:-translate-y-2 cursor-default"
           >
             <div className="text-burgundy mb-6 group-hover:scale-110 transition-transform duration-500">
               {service.icon}
             </div>
-            <h3 className="font-serif text-2xl text-elegant-black mb-4 group-hover:text-burgundy transition-colors">
+            <h3 className="font-serif text-2xl text-burgundy-dark mb-4 group-hover:text-burgundy transition-colors">
               {service.title}
             </h3>
-            <p className="text-gray-500 font-light leading-relaxed text-sm">
+            <p className="text-burgundy-light font-light leading-relaxed text-sm">
               {service.description}
             </p>
           </div>

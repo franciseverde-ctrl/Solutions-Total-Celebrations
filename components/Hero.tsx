@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 leading-tight">
           Diseñamos Momentos <br/> <span className="italic font-light">Inolvidables</span>
         </h1>
-        <p className="text-gray-100 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-white/90 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto leading-relaxed">
           Especialistas en bodas de destino y eventos de lujo donde la sofisticación se encuentra con la magia del Caribe.
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">

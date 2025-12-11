@@ -13,7 +13,7 @@ const Gallery: React.FC = () => {
     <Section id="galeria">
       <div className="text-center mb-16">
         <span className="text-burgundy uppercase tracking-[0.2em] text-sm font-medium">Nuestro Portafolio</span>
-        <h2 className="font-serif text-4xl md:text-5xl text-elegant-black mt-4">Galería Editorial</h2>
+        <h2 className="font-serif text-4xl md:text-5xl text-burgundy-dark mt-4">Galería Editorial</h2>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-min">
@@ -24,8 +24,8 @@ const Gallery: React.FC = () => {
               alt="Evento Solution Total Celebration" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-burgundy/0 group-hover:bg-burgundy/20 transition-colors duration-500 flex items-center justify-center">
-              <span className="text-white opacity-0 group-hover:opacity-100 font-serif text-xl tracking-widest translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+            <div className="absolute inset-0 bg-burgundy-dark/0 group-hover:bg-burgundy-dark/40 transition-colors duration-500 flex items-center justify-center">
+              <span className="text-white opacity-0 group-hover:opacity-100 font-serif text-xl tracking-widest translate-y-4 group-hover:translate-y-0 transition-all duration-500 border-b border-white pb-1">
                 Ver Evento
               </span>
             </div>
@@ -34,7 +34,7 @@ const Gallery: React.FC = () => {
       </div>
       
       <div className="text-center mt-12">
-         <a href="#" className="inline-block border-b border-burgundy text-burgundy pb-1 uppercase tracking-widest text-xs hover:text-gold hover:border-gold transition-colors">
+         <a href="#" className="inline-block border-b border-burgundy-light text-burgundy-light pb-1 uppercase tracking-widest text-xs hover:text-gold hover:border-gold transition-colors">
             Ver Todo el Portafolio
          </a>
       </div>

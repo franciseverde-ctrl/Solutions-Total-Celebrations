@@ -15,17 +15,17 @@ const Features: React.FC = () => {
           <div className="space-y-8">
             <div>
               <h4 className="text-xl uppercase tracking-widest text-white mb-2 font-medium">Exclusividad Garantizada</h4>
-              <p className="text-gray-400 font-light">Limitamos el número de eventos por mes para dedicar atención absoluta a cada detalle de su celebración.</p>
+              <p className="text-white/80 font-light">Limitamos el número de eventos por mes para dedicar atención absoluta a cada detalle de su celebración.</p>
             </div>
             <div className="h-[1px] w-full bg-white/10"></div>
             <div>
               <h4 className="text-xl uppercase tracking-widest text-white mb-2 font-medium">Proveedores Premium</h4>
-              <p className="text-gray-400 font-light">Acceso a la red más exclusiva de floristas, chefs y artistas en Cartagena y Colombia.</p>
+              <p className="text-white/80 font-light">Acceso a la red más exclusiva de floristas, chefs y artistas en Cartagena y Colombia.</p>
             </div>
             <div className="h-[1px] w-full bg-white/10"></div>
             <div>
               <h4 className="text-xl uppercase tracking-widest text-white mb-2 font-medium">Diseño Atemporal</h4>
-              <p className="text-gray-400 font-light">Creamos estéticas que perduran, equilibrando las tendencias actuales con la elegancia clásica.</p>
+              <p className="text-white/80 font-light">Creamos estéticas que perduran, equilibrando las tendencias actuales con la elegancia clásica.</p>
             </div>
           </div>
         </div>
