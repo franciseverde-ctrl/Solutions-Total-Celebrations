@@ -29,6 +29,16 @@
             },
             backgroundImage: {
               'hero-pattern': "url('https://picsum.photos/id/191/1920/1080')", 
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'bounce': 'bounce 2s infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
             }
           }
         }
@@ -67,5 +77,6 @@
 </head>
   <body class="bg-soft-white text-elegant-black font-sans antialiased">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
